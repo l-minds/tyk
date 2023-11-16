@@ -134,7 +134,8 @@ mdcb:
     # requests:
     #  cpu: 100m
     #  memory: 128Mi
-
+  securityContext:
+    runAsNonRoot: true
   nodeSelector: {}
   tolerations: []
   affinity: {}
@@ -203,7 +204,8 @@ tib:
     # requests:
     #  cpu: 100m
     #  memory: 128Mi
-
+  securityContext:
+    runAsNonRoot: true
   nodeSelector: {}
   tolerations: []
   affinity: {}
@@ -305,7 +307,8 @@ dash:
     # requests:
     #  cpu: 100m
     #  memory: 128Mi
-
+  securityContext:
+    runAsNonRoot: true
   nodeSelector: {}
   tolerations: []
   affinity: {}
@@ -430,7 +433,8 @@ enterprisePortal:
     # requests:
     #  cpu: 100m
     #  memory: 128Mi
-
+  securityContext:
+    runAsNonRoot: true
   nodeSelector: {}
   tolerations: []
   affinity: {}
@@ -517,7 +521,8 @@ gateway:
     # requests:
     #  cpu: 100m
     #  memory: 128Mi
-
+  securityContext:
+    runAsNonRoot: true
   nodeSelector: {}
   tolerations:
     - key: node-role.kubernetes.io/master
@@ -561,7 +566,8 @@ pump:
     # requests:
     #  cpu: 100m
     #  memory: 128Mi
-
+  securityContext:
+    runAsNonRoot: true
   nodeSelector: {}
   tolerations: []
   affinity: {}
