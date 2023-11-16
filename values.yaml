@@ -44,7 +44,7 @@ redis:
   # using a redis cluster, you can list the endpoints of the redis instances
   # or use the cluster configuration endpoint.
   # Default value: redis.{{ .Release.Namespace }}.svc.cluster.local:6379
-   addrs:
+  addrs:
      - redis-server.abdullahf-dev.svc.cluster.local:6379
   #   This is the DNS name of the redis as set when using Bitnami
   #   - tyk-redis-master.tyk.svc.cluster.local:6379
@@ -356,7 +356,7 @@ portal:
   #    hosts:
   #      - chart-example.local
 
-`enterprisePortal:
+enterprisePortal:
   # Determines whether or not the enterprise portal component should be installed.
   enabled: true
 
@@ -594,4 +594,3 @@ pump:
   mounts: []
 
 rbac: true
-
